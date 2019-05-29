@@ -1,8 +1,8 @@
-import React from 'react';
-import './App.css';
-import NumberButtons from './components/ButtonComponents/NumberButton'
-
-
+import React from "react";
+import "./App.css";
+import NumberButton from "./components/ButtonComponents/NumberButton";
+import CalculatorDisplay from "./components/DisplayComponents/CalculatorDisplay";
+import ActionButton from "./components/ButtonComponents/ActionButton";
 
 const App = () => {
   return (
@@ -14,9 +14,12 @@ const App = () => {
         with the proper components.
       </p>
       <p>
-      
-        <NumberButtons />
-        
+        <CalculatorDisplay text="test" />
+        <ActionButton text="clear" />
+        <div>
+          <NumberButton text="1" />
+          <NumberButton text="2" />
+        </div>
       </p>
     </div>
   );
