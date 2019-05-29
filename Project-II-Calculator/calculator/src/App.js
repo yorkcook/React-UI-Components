@@ -13,14 +13,16 @@ const App = () => {
         components in their respective files, remove this code and replace it
         with the proper components.
       </p>
-      <p>
+      <div>
         <CalculatorDisplay text="test" />
         <ActionButton text="clear" />
-        <div>
-          <NumberButton text="1" />
-          <NumberButton text="2" />
+        <div className="buttonStyle">
+          {[...Array(9)].map((x, i) => (
+            <NumberButton buttonStyle="numberButton" text={i + 1} />
+          ))}
         </div>
-      </p>
+        <ActionButton text="0" />
+      </div>
     </div>
   );
 };

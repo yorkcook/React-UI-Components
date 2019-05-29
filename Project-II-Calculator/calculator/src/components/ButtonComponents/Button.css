@@ -1,4 +1,5 @@
-.number-buttons {
-    display: flex;
-    flex-direction: row;
+.numberButton {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
 }
