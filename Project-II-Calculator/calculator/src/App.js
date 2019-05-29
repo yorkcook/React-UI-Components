@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import NumberButtons from './components/ButtonComponents/NumberButton'
+
+
 
 const App = () => {
   return (
@@ -11,10 +14,9 @@ const App = () => {
         with the proper components.
       </p>
       <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
+      
+        <NumberButtons />
+        
       </p>
     </div>
   );

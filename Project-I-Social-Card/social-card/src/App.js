@@ -11,6 +11,8 @@ import CardContent from './components/CardComponents/CardContent'
 
 import HeaderTitle from './components/HeaderComponents/HeaderTitle'
 
+import CardContainer from './components/CardComponents/CardContainer'
+
 const App = () => {
   return (
     <div>
@@ -23,6 +25,8 @@ const App = () => {
         <CardBanner />
 
         <CardContent />
+
+        <CardContainer />
         
     </div>
   );
