@@ -1,5 +1,8 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import NumberButton from "./components/ButtonComponents/NumberButton";
+import CalculatorDisplay from "./components/DisplayComponents/CalculatorDisplay";
+import ActionButton from "./components/ButtonComponents/ActionButton";
 
 const App = () => {
   return (
@@ -10,12 +13,16 @@ const App = () => {
         components in their respective files, remove this code and replace it
         with the proper components.
       </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+      <div>
+        <CalculatorDisplay text="test" />
+        <ActionButton text="clear" />
+        <div className="buttonStyle">
+          {[...Array(9)].map((x, i) => (
+            <NumberButton buttonStyle="numberButton" text={i + 1} />
+          ))}
+        </div>
+        <ActionButton text="0" />
+      </div>
     </div>
   );
 };
